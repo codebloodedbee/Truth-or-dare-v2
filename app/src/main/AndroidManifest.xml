@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruthOrDare2">
         <activity
+            android:name=".Launch"
+            android:exported="false" />
+        <activity
+            android:name=".Vibes"
+            android:exported="false" />
+        <activity
             android:name=".Notification"
             android:exported="false" />
         <activity
