@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/answer_frame.xml" value="0.225" />
         <entry key="app/src/main/res/drawable-v24/back.xml" value="0.371" />
+        <entry key="app/src/main/res/drawable-v24/button2.xml" value="0.371" />
+        <entry key="app/src/main/res/drawable-v24/dial.xml" value="0.225" />
+        <entry key="app/src/main/res/drawable-v24/frame_loading.xml" value="0.203" />
+        <entry key="app/src/main/res/drawable-v24/input_box_frame.xml" value="0.225" />
+        <entry key="app/src/main/res/drawable/button2.xml" value="0.371" />
         <entry key="app/src/main/res/layout/activity_launch.xml" value="0.4036458333333333" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2363250732421876" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.4531191851641681" />
+        <entry key="app/src/main/res/layout/progress_loading.xml" value="0.4036458333333333" />
       </map>
     </option>
   </component>

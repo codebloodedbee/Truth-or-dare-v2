@@ -1,3 +1,191 @@
 <resources>
-    <string name="app_name">TruthOrDare2</string>
+    <string name="app_name">Truth or Dare with images and custom games</string>
+    <string name="lorem">A. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer
+        took a galley of type and scrambled it to make a type specimen book.
+    </string>
+    <string name="test_done">You have successfully completed your test. Kindly submit test to proceed. </string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="country">Country</string>
+    <string name="region">Region/State/Province</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">No I\'m not ready</string>
+    <string name="start">Start Assessment</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="how_code">"How to get a code "</string>
+    <string name="create_code">Create a Custom Test/Assessment</string>
+    <string name="get_code">Get Access Code to an existing Test</string>
+    <string name="explore_test">Explore the open Test in different categories </string>
+    <string name="get_code_exp">Request for a test code from the test creator</string>
+    <string name="create_code_exp">Visit sttudiom.com to create your own custom test</string>
+    <string name="explore_test_exp">We have open test that you can take. </string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_dashboard">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="view_all"><![CDATA[This is an <u>view all </u>.]]></string>
+    <string name="about_us">Sttudiom provides schools with an outline admission testing and contieous assessment platform for easy and quick tests. Studdiom provides backup for seet questions and a topic by topic test system is employed to accertain a students knowledge across all topics non particular subject. Test questions can be edited and students can take test from any location and results are seen in real time. test is timed and devoid of interruptions as it is safe ad secured.</string>
+
+
+    <string name="privacy2">Sttudiom provides schools with an outline admission testing and </string>
+
+    <string name="lorem_ipsum">
+<![CDATA[
+
+<div class="elementor-element elementor-element-14eb03e elementor-widget elementor-widget-text-editor" data-id="14eb03e" data-element_type="widget" data-widget_type="text-editor.default">
+    <div class="elementor-widget-container">
+        <div class="elementor-text-editor elementor-clearfix">
+            <p><b>Privacy Policy</b></p>
+            <p><span style="font-weight: 400;">This policy applies to all information collected or submitted on Sttudiom App’s website and our apps for iPhone and any other devices and platforms. </span></p>
+            <p><span style="font-weight: 400;">This privacy policy applies to you anytime you use Sttudiom App, or in anyway use our service, access Sttudiom App content, or any of our website domains. The privacy policy includes important information related to:</span></p>
+            <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Information we collect</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">How we use that information and who we share it with</span></li>
+
+                <li style="font-weight: 400;"><span style="font-weight: 400;">How you can access and update that information</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The options you have related to the collection, storage, use and storage of that information</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">How we protect that information</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Age restrictions</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Geographic compliance</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Your Consent</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Sttudiom App Contact Information</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Changes to this Policy</span></li>
+            </ul>
+            <p><span style="font-weight: 400;">&nbsp;</span><b style="font-style: inherit;">Information we collect</b></p>
+            <p><span style="font-weight: 400;">When creating an account on Sttudiom App, you will be asked to enter an </span><b>email address, a username/handle,</b><span style="font-weight: 400;"> and a password. Email addresses are only used for logging in, password resets, responding to emails that you initiate, notifications that you request, and App related emails. We don’t like spam either, so will do our best to avoid sending you things you don’t have interest in. We also ask for your name, date of birth and gender. This information is to help us get to know you better in our attempt to potentially select content you may enjoy. If you subscribe to our service with a paid-for subscription, necessary information related to your payment details will be collected and stored safely and securely.&nbsp;</span>You may also add a profile picture which is optional. If you add your profile picture we only use it to display on your profile, it’s not shared with any 3rd parties. You may also add a profile picture to your Sttudiom App profile. This feature is optional. If you add your profile picture we only use it display on your app profile. Your image is not shared with any 3rd parties. You acknowledge that Sttudiom can upload your profile picture to our server to our server for use only within Sttudiom’s application. If you login with a third-party service such as Facebook, we are not storing picture, but you agree to have your profile picture from Facebook displayed. You may change this profile image at any time.</p>
+            <p><span style="font-weight: 400;">We collect and store information about your audio plays, playlists, and listening progress </span><b>to sync this information between the website and your devices, as well as to provide helpful information to our recommendation engine.</b><span style="font-weight: 400;"> As well, we collect statistics about which audio files and categories are most popular to help inform our recommendation engine.</span></p>
+            <ul>
+                <li><strong>Further details</strong>
+                    <ul>
+                        <li>If you upload files to Sttudiom App, we need to store them until you delete them.</li>
+
+                        <li>We use cookies on the site and the app to keep you logged in. Our server software may also store basic technical information, such as your IP address, in temporary memory or logs.</li>
+                    </ul>
+                </li>
+                <li><b>Third-party platforms</b>
+                    <ul>
+                        <li><span style="font-weight: 400;">Sttudiom App may utilize third-party software and services to offer our service to you. These third-party apps may have access to some of your basic technical information to perform their role, such as your IP address.&nbsp;</span></li>
+                    </ul>
+                </li>
+                <li><strong>Third party services we use along with their privacy policies are:</strong>&nbsp;<ul>
+                        <li>Social Media accounts<ul>
+                                <li>If you share Sttudiom data on your social media accounts, information related to that data may be collected and stored to help inform our recommendation engine.&nbsp;</li>
+                                <li>For users who use social media login (Facebook/Google/Apple) we ask for personal details like Name, ID, and profile picture. Aside from this information, we are not collecting any other data from your social media account. This information is only used to display in your profile in the Sttudiom application. None of this information is shared with any 3rd party.</li>
+                                <li>In case you would like to remove this information, please use the Delete Account button available in the application. In case you have any questions, reach out to us on team@Sttudiomapp.com and our team will do needful.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Analytics</strong>
+                    <ul>
+                        <li><span style="font-weight: 400;">Sttudiom App collects aggregate, anonymous statistics related to the use of particular features, to improve the app. </span></li>
+                    </ul>
+                </li>
+            </ul>
+            <p><b>How we use that information and who we share it with</b></p>
+            <p><span style="font-weight: 400;">We use the information we collect to operate and improve our website, apps, and customer service, as well as to potentially offer new products or services in the future. That information may also be used for marketing purposes, including offering insights to advertisers.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">Anonymous, aggregate statistics may be shared with outside parties, such as total users, how many people listen to a particular audio track, or the total listen time from all users on Sttudiom App.</span></p>
+            <p><span style="font-weight: 400;">Legal Obligations</span></p>
+            <p><span style="font-weight: 400;">We may disclose your information in response to subpoenas, court orders, or other legal requirements; to exercise our legal rights or defend against legal claims; to investigate, prevent, or take action regarding illegal activities, suspected fraud or abuse, violations of our policies; or to protect our rights and property.</span></p>
+            <p><span style="font-weight: 400;">Business Transfer</span></p>
+            <p><span style="font-weight: 400;">In the future, we may sell to, buy, merge with, or partner with other businesses. In such transactions, user information may be among the transferred assets.</span></p>
+            <p><span style="font-weight: 400;">Communication</span></p>
+            <p><span style="font-weight: 400;">Your email and the use of our notification function may be used to reply or respond to questions, comments or concerns you initiate. As well, these communication methods may be used for marketing purposes, newsletters, updates, or special offers.&nbsp;</span></p>
+            <p><b>How y</b><b>ou can access and update that information</b></p>
+            <p><span style="font-weight: 400;">Accessing, changing, or deleting your information</span></p>
+            <p><span style="font-weight: 400;">You may access or change your information or delete your account from Sttudiom App.</span></p>
+            <p><b>The options you have related to the collection, storage, use and storage of that information</b></p>
+            <p><span style="font-weight: 400;">Sttudiom app offers the ability to delete your account and remove content you have shared through Sttudiom’s App’s website or App service.&nbsp;</span></p>
+            <p><b>How we protect that information</b></p>
+            <p><span style="font-weight: 400;">We implement a variety of security measures to help keep your information secure.&nbsp;</span></p>
+            <p><span style="font-weight: 400;">Accessing, changing, or deleting your information</span></p>
+            <p><span style="font-weight: 400;">You may access or change your information or delete your account from Sttudiom App.</span></p>
+            <p><span style="font-weight: 400;">Deleted information may be kept in ba</span><span style="font-weight: 400;">ckups for up to 90 days. Backups are encrypted and are only accessed if needed for disaster recovery.</span></p>
+
+            <p><b>Age Restrictions</b></p>
+            <p><span style="font-weight: 400;">Children’s Online Privacy Protection Act Compliance</span></p>
+            <p><span style="font-weight: 400;">Our website, services or app are not intended for children under the age of 13. We do not knowingly collect or maintain information on our website or app from those under the age of 13. If you are under the age of 13, please do not provide any information on this website, or app.</span></p>
+            <p><b>Geographic Compliance</b></p>
+            <p><span style="font-weight: 400;">We comply with the Alberta’s Personal Information Protection Act (PIPA).&nbsp;</span></p>
+            <p><span style="font-weight: 400;">Information for European Union Customers</span></p>
+            <p><span style="font-weight: 400;">By using Sttudiom App and providing your information, you authorize us to collect, use, and store your information outside of the European Union.</span></p>
+            <p><span style="font-weight: 400;">International Transfers of Information</span></p>
+            <p><span style="font-weight: 400;">Information may be processed, stored, and used outside of the country in which you are located. Data privacy laws vary across jurisdictions, and different laws may be applicable to your data depending on where it is processed, stored, or used.</span></p>
+            <p><span style="font-weight: 400;">CCPA Privacy Policy (Do Not Sell My Personal Information)</span></p>
+            <p><span style="font-weight: 400;">Under the CCPA, among other rights, California consumers have the right to:</span></p>
+            <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Request that a business delete any personal data about the consumer that a business has collected.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data.</span></li>
+            </ul>
+            <p><span style="font-weight: 400;">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</span></p>
+            <p><span style="font-weight: 400;">GDPR Privacy Policy (Data Protection Rights)</span></p>
+            <p><span style="font-weight: 400;">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</span></p>
+            <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</span></li>
+            </ul>
+            <p><span style="font-weight: 400;">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</span></p>
+            <p><b>Your Consent</b></p>
+            <p><span style="font-weight: 400;">By using our site or apps, you consent to Sttudiom App’s privacy policy.</span></p>
+            <p><b>Sttudiom App Contact Information</b></p>
+            <p><span style="font-weight: 400;">If you have questions regarding this privacy policy, you may email </span><b>support@Sttudiomapp.com</b><span style="font-weight: 400;"> Please be aware that if you would like to delete your account, you should do so within Mindse</span><span style="font-weight: 400;">t App, not via email requests, for security reasons.</span></p>
+            <p><b>Changes to this policy</b></p>
+            <p><b>If we make changes to our privacy policy, changes will be posted here. </b><span style="font-weight: 400;">Summary of changes so far:&nbsp;</span></p>
+            <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Update 2.0 – November 26, 2020</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+]]>
+</string>
+
+    <string name="create_assessment_steps">
+<![CDATA[
+
+            <p><b>Follow the steps below to create Assessment</b></p>
+          <ul>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Visit sttudiom.com</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Login with your same credentials</span></li>
+
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Go to Assessment</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Create Assessment</li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Add Questions</span></li>
+                <li style="font-weight: 400;"><span style="font-weight: 400;">Add Settings</span></li>
+
+            </ul>
+
+]]>
+</string>
+
+
+    <string name="privacy_policy"> Sttudiom provides schools with an outline admission testing and </string>
+    <string name="priv">"This policy applies to all information collected or submitted on Sttudiom App’s website and our apps for iPhone and any other devices and platforms.  This privacy policy applies to you anytime you use Sttudiom App, or in anyway use our service, access Sttudiom App content, or any of our website domains. The privacy policy includes important information related to:  "</string>
+
 </resources>

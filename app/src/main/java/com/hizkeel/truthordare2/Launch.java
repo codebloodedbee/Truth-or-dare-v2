@@ -19,7 +19,7 @@ public class Launch extends AppCompatActivity {
     }
 
     public void btnRegister(View v) {
-        Intent intent = new Intent(this,Register.class);
+        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
     public void btnLogin(View v) {
