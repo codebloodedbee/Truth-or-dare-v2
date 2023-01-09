@@ -82,7 +82,7 @@ public class SignUp extends AppCompatActivity implements Validator.ValidationLis
         validator = new Validator(this);
         validator.setValidationListener(this);
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
 
 //        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 //        getSupportActionBar().setDisplayShowCustomEnabled(true);

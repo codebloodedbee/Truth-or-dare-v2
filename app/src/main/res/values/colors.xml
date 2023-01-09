@@ -12,6 +12,10 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorAccent8">#FCB1CD</color>
     <color name="pink2">#FFA8A7</color>
+    <color name="teal_200">#FFA8A7</color>
+    <color name="purple_700">#FFA8A7</color>
+
+    <color name="purple_200">#FFA8A7</color>
     <color name="colorAccent9">#F8EFF2</color>
 
     <color name="hhash">#E7E7EB</color>

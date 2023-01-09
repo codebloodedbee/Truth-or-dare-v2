@@ -12,9 +12,12 @@
         <entry key="app/src/main/res/drawable/button2.xml" value="0.371" />
         <entry key="app/src/main/res/drawable/selector.xml" value="0.371" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.20025816221494935" />
-        <entry key="app/src/main/res/layout/activity_launch.xml" value="0.4036458333333333" />
+        <entry key="app/src/main/res/layout/activity_launch.xml" value="0.25411122639973954" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.2363250732421876" />
+        <entry key="app/src/main/res/layout/activity_notification.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.4531191851641681" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.26182432432432434" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.2287162162162162" />
         <entry key="app/src/main/res/layout/progress_loading.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/menu/menu_navigation.xml" value="0.26182432432432434" />
       </map>

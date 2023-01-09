@@ -6,6 +6,6 @@
         android:color="@color/colorPrimary"/>
     <item
         android:state_selected="false"
-        android:color="@color/colorPrimaryLight"/>
+        android:color="@color/bg2"/>
 
 </selector>
