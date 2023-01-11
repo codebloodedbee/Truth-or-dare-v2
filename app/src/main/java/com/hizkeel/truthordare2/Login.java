@@ -89,15 +89,6 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
             login2();
         }
 
-//        getSupportActionBar().hide();
-
-
-
-//        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-//        getSupportActionBar().setDisplayShowCustomEnabled(true);
-//        getSupportActionBar().setCustomView(R.layout.login_action_bar_layout);
-//        View view =getSupportActionBar().getCustomView();
-
 
         ImageView imageView= (ImageView)findViewById(R.id.action_bar_back);
 
@@ -163,7 +154,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
 
     }
-    public void gotoRegister(View v){
+    public void gotoSignUp(View v){
 
         Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
@@ -186,22 +177,29 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
     }
 
 
+    public void progProc(){
+        progressDialog = new ProgressDialog(Login.this);
+        progressDialog.setMessage("Loading..."); // Setting Message
+        progressDialog.setTitle("Processing"); // Setting Title
+        progressDialog.setIcon(R.drawable.icon);
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
+        progressDialog.show(); // Display Progress Dialog
+        progressDialog.setCancelable(false);
+    }
+
+
 
     private void login(){
-
-        // set variable to values
-
-
 
         email = etEmail.getText().toString();
         password = etPassword.getText().toString();
 
 
-        //post to backend.
-//        progProc();
 
-        progressON();
-        String URL = "http://api.question.hizkeel.com/v1/api.php";
+        progProc();
+//        progressON();
+
+        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST, URL,
                 new Response.Listener<String>() {
@@ -212,9 +210,9 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             if (jsonObject.getString("status").equals("true")) {
-//                                progressDialog.dismiss();
+                                progressDialog.dismiss();
 
-                                loadAssessmentNew();
+                                loadVibesNew();
 
                                 sp.edit().putString("Semail", etEmail.getText().toString().trim()).apply();
                                 sp.edit().putString("Spassword", etPassword.getText().toString().trim()).apply();
@@ -261,8 +259,8 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
 
                             } else {
-//                                progressDialog.dismiss();
-                                progressOFF();
+                                progressDialog.dismiss();
+//                                progressOFF();
                                 Toast.makeText(Login.this, jsonObject.getString("message"), LENGTH_SHORT).show();
                             }
 
@@ -276,8 +274,8 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         //what to do if it encounter error
-//                        progressDialog.dismiss();
-                        progressOFF();
+                        progressDialog.dismiss();
+//                        progressOFF();
                         Toast.makeText(Login.this, "Seems your network is bad. Kindly restart app if this persist"+error, LENGTH_SHORT).show();
                     }
                 }
@@ -286,7 +284,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("command", "login");
+                params.put("command", "sign_up");
                 params.put("email", email);
                 params.put("password", password);
 
@@ -309,36 +307,22 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
         etEmail.setText(sp.getString("Semail",""));
         etPassword.setText(sp.getString("Spassword",""));
-        password = etPassword.getText().toString();
 
         //post to backend.
-        progressON();
-        String URL = "http://api.question.hizkeel.com/v1/api.php";
+        progProc();
+        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST, URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
-
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             if (jsonObject.getString("status").equals("true")) {
 
-
-
                                 sp.edit().putBoolean("logged", true).apply();
 
-                                loadAssessmentNew();
-
-
-//                                Toast.makeText(StudentDetails.this, "successfull", LENGTH_SHORT).show();
-
-
-
-
-
-
+                                loadVibesNew();
 
                                 JSONObject datao = jsonObject.getJSONObject("data");
                                 try {
@@ -354,16 +338,6 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                                     userData.storeData(FIRST_NAME, LAST_NAME, email, country, state );
 
 
-
-
-//                                    Toast.makeText(Login.this, "Welcome: "+userData.getLastname().toString(), LENGTH_SHORT).show();
-
-//                                    store in user data
-
-
-
-
-
                                 } catch (JSONException e1) {
                                     e1.printStackTrace();
                                 }
@@ -372,7 +346,8 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
 
                             } else {
-                                progressOFF();
+
+                                progressDialog.dismiss();
                                 Toast.makeText(Login.this, jsonObject.getString("message"), LENGTH_SHORT).show();
                             }
 
@@ -386,7 +361,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         //what to do if it encounter error
-                        progressOFF();
+                        progressDialog.dismiss();
                         Toast.makeText(Login.this, "Seems your network is bad. Kindly restart app if this persist"+error, LENGTH_SHORT).show();
                     }
                 }
@@ -395,7 +370,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("command", "login");
+                params.put("command", "sign_up");
                 params.put("email", sp.getString("Semail","") );
                 params.put("password", sp.getString("Spassword",""));
 
@@ -408,10 +383,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
         requestQueue.add(stringRequest);
 
 
-
-
     }
-
 
 
     public void progressON() {
@@ -430,11 +402,11 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
         ba.progressOFF();
     }
 
-    public void loadAssessmentNew(){
+    public void loadVibesNew(){
 
 
 
-        String URL = "http://api.question.hizkeel.com/v1/api.php";
+        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST, URL,
                 new Response.Listener<String>() {
@@ -455,7 +427,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
 //                                Toast.makeText(getApplicationContext(), "x"+ iop, Toast.LENGTH_LONG).show();
 
-                                loadAssessmentTrend();
+                                loadVibesTrend();
 
 //                                Toast.makeText(getContext(), "x:" + x, Toast.LENGTH_LONG).show();
 
@@ -475,8 +447,8 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         //what to do if it encounter error
-//                        progressDialog.dismiss();
-                        // loadTest();
+                        progressDialog.dismiss();
+
                         Toast.makeText(getApplicationContext(), "Seems your network is bad. Kindly restart app if this persist"+error, LENGTH_SHORT).show();
                     }
                 }
@@ -503,11 +475,11 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
     }
 
-    public void loadAssessmentTrend(){
+    public void loadVibesTrend(){
 
 //        progProc();
 
-        String URL = "http://api.question.hizkeel.com/v1/api.php";
+        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST, URL,
                 new Response.Listener<String>() {
@@ -517,7 +489,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             if (jsonObject.getString("status").equals("true")) {
-                                progressOFF();
+                                progressDialog.dismiss();
 //                                Toast.makeText(getContext(), "successfullyyy"+response.toString(), LENGTH_SHORT).show();
 
 
@@ -537,7 +509,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                                 }
 
                             } else {
-                                progressOFF();
+                                progressDialog.dismiss();
                                 Toast.makeText(getApplicationContext(), jsonObject.getString("message"), LENGTH_SHORT).show();
                             }
 
@@ -551,8 +523,8 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         //what to do if it encounter error
-                        progressOFF();
-                        // loadTest();
+                        progressDialog.dismiss();
+
                         Toast.makeText(getApplicationContext(), "Seems your network is bad. Kindly restart app if this persist"+error, LENGTH_SHORT).show();
                     }
                 }

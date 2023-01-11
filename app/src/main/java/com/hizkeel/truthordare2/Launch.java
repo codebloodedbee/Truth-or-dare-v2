@@ -23,7 +23,7 @@ public class Launch extends AppCompatActivity {
         startActivity(intent);
     }
     public void btnLogin(View v) {
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
 

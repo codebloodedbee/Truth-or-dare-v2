@@ -177,7 +177,7 @@ public class SignUp extends AppCompatActivity implements Validator.ValidationLis
 
         //post to backend.
         progProc();
-        String URL = "http://api.question.hizkeel.com/v1/api.php";
+        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST, URL,
                 new Response.Listener<String>() {
@@ -219,7 +219,7 @@ public class SignUp extends AppCompatActivity implements Validator.ValidationLis
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("command", "register");
+                params.put("command", "sign_up");
                 params.put("firstname", firstName);
                 params.put("lastname", lastName);
                 params.put("email", email);
