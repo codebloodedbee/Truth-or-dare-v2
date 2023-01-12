@@ -2,6 +2,8 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/amita_bold</item>
+        <item>@font/asul_bold</item>
+        <item>@font/bad_script</item>
         <item>@font/quicksand_medium</item>
         <item>@font/roboto_bold</item>
         <item>@font/roboto_thin</item>
