@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruthOrDare2">
         <activity
+            android:name=".VibeInfo"
+            android:exported="false" />
+        <activity
+            android:name=".GameQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".GameOption"
+            android:exported="false" />
+        <activity
+            android:name=".Players"
+            android:exported="false" />
+        <activity
             android:name=".Settings"
             android:exported="false" />
         <activity
@@ -53,7 +65,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
