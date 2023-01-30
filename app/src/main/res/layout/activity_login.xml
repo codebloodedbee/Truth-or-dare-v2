@@ -106,7 +106,8 @@
                     android:id="@+id/etEmail"
                     style="@style/student_details_title_input"
 
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/bg2" />
             </LinearLayout>
 
             <LinearLayout
@@ -130,7 +131,8 @@
                     android:id="@+id/etPassword"
                     style="@style/student_details_title_input"
 
-                    android:inputType="textPassword|textWebPassword" />
+                    android:inputType="textPassword|textWebPassword"
+                    android:textColor="@color/bg2" />
 
                 <TextView
                     android:id="@+id/textView36"
@@ -159,7 +161,7 @@
                     android:layout_height="50dp"
                     android:layout_gravity="bottom"
                     android:layout_weight="0"
-                    android:onClick="btnLogin"
+                    android:onClick="btnLogin2"
 
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"

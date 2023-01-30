@@ -154,6 +154,16 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
 
     }
+
+    public void btnLogin2(View v){
+
+        Intent intent = new Intent(this, Home.class);
+        startActivity(intent);
+
+
+    }
+
+
     public void gotoSignUp(View v){
 
         Intent intent = new Intent(this, SignUp.class);
