@@ -12,7 +12,11 @@
         <entry key="app/src/main/res/drawable/back_white.xml" value="0.371" />
         <entry key="app/src/main/res/drawable/button2.xml" value="0.371" />
         <entry key="app/src/main/res/drawable/ic_baseline_run_circle_24.xml" value="0.371" />
+        <entry key="app/src/main/res/drawable/person.xml" value="0.31" />
+        <entry key="app/src/main/res/drawable/profile_head.xml" value="0.31" />
         <entry key="app/src/main/res/drawable/selector.xml" value="0.371" />
+        <entry key="app/src/main/res/drawable/vector_back.xml" value="0.31" />
+        <entry key="app/src/main/res/layout/activity_about_app.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_game_option.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_game_question.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.4320175170898437" />
@@ -20,6 +24,7 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.27370452880859386" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_players.xml" value="0.30580015440244934" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.4531191851641681" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.2287162162162162" />
