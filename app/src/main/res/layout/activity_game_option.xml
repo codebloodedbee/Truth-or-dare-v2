@@ -25,22 +25,12 @@
 
             android:layout_marginBottom="10dp"
             android:layout_weight="0"
-            android:capitalize="none"
+
+            android:letterSpacing="0.4"
+            android:textStyle="bold"
+
             android:onClick="pp"
             android:text="Truth"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/button11"
-            style="@style/button_1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-
-            android:layout_marginBottom="10dp"
-            android:layout_weight="0"
-            android:capitalize="none"
-            android:onClick="pp"
-            android:text="Dare"
             android:textAllCaps="false" />
 
         <Button
@@ -51,9 +41,33 @@
 
             android:layout_marginBottom="10dp"
             android:layout_weight="0"
+
+            android:letterSpacing="0.4"
             android:onClick="pp"
             android:text="Random"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/button_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:letterSpacing="0.4"
+            android:textStyle="bold"
+
+
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0"
+            android:capitalize="none"
+            android:onClick="pp"
+            android:text="Dare"
             android:textAllCaps="false" />
+
+
 
     </LinearLayout>
 

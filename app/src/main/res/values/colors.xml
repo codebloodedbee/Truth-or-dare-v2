@@ -5,7 +5,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="colorPrimary">#EE0231</color>
-    <color name="colorPrimaryLight">#FAFF7A7A</color>
+    <color name="colorPrimaryLight">#FF8F8F</color>
     <color name="bgg">#E2E6FF</color>
     <color name="bg2">#F3F4FB</color>
 
@@ -26,6 +26,12 @@
     <color name="light_blue">#F0F7FA</color>
     <color name="well">#F8F7F7</color>
     <color name="background_all">#121212</color>
+
+    <color name="black1">#000000</color>
+    <color name="black2">#121212</color>
+    <color name="black3">#1B1A1A</color>
+    <color name="black4">#121212</color>
+    <color name="black5">#121212</color>
 
     <color name="input_field">#232323</color>
     <color name="neon">#39FF14</color>

@@ -40,7 +40,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/background_all"
+                    android:background="@color/black3"
                     android:orientation="vertical"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp">

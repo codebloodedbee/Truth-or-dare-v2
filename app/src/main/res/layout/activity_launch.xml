@@ -16,7 +16,19 @@
         android:layout_gravity="bottom"
         android:layout_weight="1"
         android:gravity="bottom"
-        android:orientation="vertical" />
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:text="Truth or Dare v2"
+            android:textAlignment="center"
+            android:textColor="@color/bg2"
+            android:textSize="24sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

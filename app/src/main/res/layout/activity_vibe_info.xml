@@ -11,11 +11,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/black3"
+
         android:layout_margin="20dp"
         android:layout_weight="1"
-        android:background="@color/background_all"
-        android:backgroundTint="@color/background_all"
-        app:cardCornerRadius="10dp"
+
+        app:cardCornerRadius="15dp"
         app:cardElevation="15dp">
 
         <LinearLayout
@@ -24,7 +25,6 @@
             android:layout_gravity="bottom"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:background="@color/background_all"
             android:gravity="bottom"
             android:orientation="vertical">
 
@@ -66,7 +66,7 @@
                     android:fontFamily="@font/quicksand_medium"
                     android:lineSpacingExtra="8sp"
                     android:text="The transformation of animals, plants and other living things into different forms (now understood as a change in genetic composition) by the accumulation of changes over successive generations."
-                    android:textColor="@color/colorPrimaryLight"
+                    android:textColor="@color/colorAccent9"
                     android:textSize="14sp" />
 
 
@@ -78,51 +78,6 @@
                 android:layout_gravity="center_vertical"
                 android:gravity="center_vertical"
                 android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/body_item_margin"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/tvAuthor"
-                            style="@style/test_description_body"
-                            android:layout_width="match_parent"
-
-                            android:background="@color/colorPrimary"
-                            android:padding="12dp"
-
-                            android:text="Wole K Soyinka"
-                            android:textColor="@color/white"
-                            android:textSize="14sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/tvLanguage"
-                            style="@style/test_description_body"
-                            android:background="@color/colorPrimary"
-                            android:padding="12dp"
-                            android:text="ENGLISH"
-                            android:textColor="@color/white"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
