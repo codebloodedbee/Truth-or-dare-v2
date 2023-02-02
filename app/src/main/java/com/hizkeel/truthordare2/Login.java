@@ -563,5 +563,157 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
 
 
+    public void loadAssessmentNew(){
+
+
+
+        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST, URL,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            if (jsonObject.getString("status").equals("true")) {
+//                                progressDialog.dismiss();
+//                                Toast.makeText(getContext(), "successfullyyy"+response.toString(), LENGTH_SHORT).show();
+
+
+                                // create a json file and store the response in local memory
+                                boolean x = createJson(getApplicationContext(), "new_list", response);
+
+                                String iop = readJson(getApplicationContext(), "new_list");
+
+//                                Toast.makeText(getApplicationContext(), "x"+ iop, Toast.LENGTH_LONG).show();
+
+                                loadAssessmentTrend();
+
+//                                Toast.makeText(getContext(), "x:" + x, Toast.LENGTH_LONG).show();
+
+
+                            } else {
+//                                progressDialog.dismiss();
+                                Toast.makeText(getApplicationContext(), jsonObject.getString("message"), LENGTH_SHORT).show();
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        //what to do if it encounter error
+//                        progressDialog.dismiss();
+                        // loadTest();
+                        Toast.makeText(getApplicationContext(), "Seems your network is bad. Kindly restart app if this persist"+error, LENGTH_SHORT).show();
+                    }
+                }
+
+        ) {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("command", "get_assessment_type");
+                params.put("type", "new");
+
+
+
+
+
+                return params;
+            }
+
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(stringRequest);
+
+
+
+    }
+
+
+    public void loadAssessmentTrend(){
+
+//        progProc();
+
+        String URL = "http://api.question.hizkeel.com/v1/api.php";
+        StringRequest stringRequest = new StringRequest(
+                Request.Method.POST, URL,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            if (jsonObject.getString("status").equals("true")) {
+                                progressOFF();
+//                                Toast.makeText(getContext(), "successfullyyy"+response.toString(), LENGTH_SHORT).show();
+
+
+                                // create a json file and store the response in local memory
+                                boolean x = createJson(getApplicationContext(), "trend_list", response);
+
+
+                                go();
+//                                Toast.makeText(getContext(), "x:" + x, Toast.LENGTH_LONG).show();
+
+                                if(x){
+//                                    updateTrendList();
+
+//                                    Toast.makeText(getContext(), "yes", Toast.LENGTH_LONG).show();
+                                } else {
+//                                    Toast.makeText(getContext(), "no", Toast.LENGTH_LONG).show();
+                                }
+
+                            } else {
+                                progressOFF();
+                                Toast.makeText(getApplicationContext(), jsonObject.getString("message"), LENGTH_SHORT).show();
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        //what to do if it encounter error
+                        progressOFF();
+                        // loadTest();
+                        Toast.makeText(getApplicationContext(), "Seems your network is bad. Kindly restart app if this persist"+error, LENGTH_SHORT).show();
+                    }
+                }
+
+        ) {
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("command", "get_assessment_type");
+                params.put("type", "trend");
+
+
+
+
+
+                return params;
+            }
+
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(stringRequest);
+
+
+
+    }
+
+
+
 
 }
