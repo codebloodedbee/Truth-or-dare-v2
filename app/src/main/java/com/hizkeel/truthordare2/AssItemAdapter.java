@@ -1,7 +1,9 @@
 package com.hizkeel.truthordare2;
 
 import static android.widget.Toast.LENGTH_SHORT;
-import static com.sttudiom.assessment.model.JsonQuestion.createJson;
+
+
+import static com.hizkeel.truthordare2.JsonQuestion.createJson;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -22,7 +24,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.sttudiom.assessment.view.TestDescription;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -54,9 +56,8 @@ public class AssItemAdapter extends RecyclerView.Adapter<AssItemAdapter.MyViewHo
 
         public MyViewHolder(View view) {
             super(view);
-            title = (TextView) view.findViewById(R.id.ass_title);
-            exp = (TextView) view.findViewById(R.id.ass_exp);
-            code = (TextView) view.findViewById(R.id.ass_code);
+            title = (TextView) view.findViewById(R.id.game_title);
+
 
         }
     }
@@ -118,7 +119,7 @@ public class AssItemAdapter extends RecyclerView.Adapter<AssItemAdapter.MyViewHo
         progressDialog = new ProgressDialog(context);
         progressDialog.setMessage("Loading..."); // Setting Message
         progressDialog.setTitle("Fetching Data"); // Setting Title
-        progressDialog.setIcon(R.drawable.sttudiom_icon);
+        progressDialog.setIcon(R.drawable.icon);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
         progressDialog.show(); // Display Progress Dialog
         progressDialog.setCancelable(false);
@@ -164,7 +165,7 @@ public class AssItemAdapter extends RecyclerView.Adapter<AssItemAdapter.MyViewHo
                                 boolean x = createJson(context, "qupp", response);
                                 if(x){
 //                                    go();
-                                    Intent intent = new Intent(context, TestDescription.class);
+                                    Intent intent = new Intent(context, VibeInfo.class);
 
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 

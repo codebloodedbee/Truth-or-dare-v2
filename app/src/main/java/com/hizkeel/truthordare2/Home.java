@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -99,14 +100,14 @@ public class Home extends AppCompatActivity {
 
 
 
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager( Home.this,  LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager( Home.this,  LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 //        recyclerView.addItemDecoration(new DividerItemDecoration( getActivity(), LinearLayoutManager.HORIZONTAL));
 
         recyclerView.setAdapter((RecyclerView.Adapter) mAdapter);
 
-        RecyclerView.LayoutManager mLayoutManager3 = new LinearLayoutManager( Home.this,  LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView.LayoutManager mLayoutManager3 = new LinearLayoutManager( Home.this,  LinearLayoutManager.VERTICAL, false);
         recyclerView3.setLayoutManager(mLayoutManager3);
         recyclerView3.setItemAnimator(new DefaultItemAnimator());
 //        recyclerView.addItemDecoration(new DividerItemDecoration( getActivity(), LinearLayoutManager.HORIZONTAL));
@@ -121,43 +122,43 @@ public class Home extends AppCompatActivity {
 //        loadAssessmentTrend();
 
         updateNewList();
-        updateTrendList();
+//        updateTrendList();
 
 //        loadData();
 //        loadData2();
 
 
-       recyclerView = (RecyclerView) findViewById(R.id.recyclerView2);
-
-        recyclerView3 = (RecyclerView) findViewById(R.id.recyclerView3);
-
-        mAdapter = new ItemAdapter2(itemList,  Home.this);
-
-        mAdapterTrend = new ItemAdapter2(itemListTrend,  Home.this);
-
-
-
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager( Home.this,  LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-//        recyclerView.addItemDecoration(new DividerItemDecoration( getActivity(), LinearLayoutManager.HORIZONTAL));
-
-        recyclerView.setAdapter((RecyclerView.Adapter) mAdapter);
-
-        RecyclerView.LayoutManager mLayoutManager3 = new LinearLayoutManager( Home.this,  LinearLayoutManager.HORIZONTAL, false);
-        recyclerView3.setLayoutManager(mLayoutManager3);
-        recyclerView3.setItemAnimator(new DefaultItemAnimator());
-//        recyclerView.addItemDecoration(new DividerItemDecoration( getActivity(), LinearLayoutManager.HORIZONTAL));
-
-        recyclerView3.setAdapter((RecyclerView.Adapter) mAdapterTrend);
-
-
-
-        updateNewList();
-        updateTrendList();
-
-/
     }
+
+    private void loadData() {
+
+        Item2 item = new Item2("titlex", "descriptionx", "creatorx", "viewsx", "ratingx", "codex");
+        itemList.add(item);
+
+        item = new Item2("titlex", "descriptionx", "creatorx", "viewsx", "ratingx", "codex");
+        itemList.add(item);
+
+
+
+
+        mAdapter.notifyDataSetChanged();
+    }
+
+    private void loadData2() {
+
+        Item2 item = new Item2("titlex", "descriptionx", "creatorx", "viewsx", "ratingx", "codex");
+        itemList.add(item);
+
+        item = new Item2("titlex", "descriptionx", "creatorx", "viewsx", "ratingx", "codex");
+        itemList.add(item);
+
+
+
+
+        mAdapter.notifyDataSetChanged();
+    }
+
+
 
     public void view(View v) {
         Intent intent = new Intent(this, VibeInfo.class);
@@ -179,8 +180,11 @@ public class Home extends AppCompatActivity {
 
         String iop = readJson(getApplicationContext(), "new_list");
 
-//        Toast.makeText(getContext(), "x"+ iop, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), "x"+ iop, Toast.LENGTH_LONG).show();
         JSONObject obj = null;
+
+
+
         try {
             obj = new JSONObject(iop);
 
@@ -194,7 +198,7 @@ public class Home extends AppCompatActivity {
 
 //                Toast.makeText(getContext(), "title:"+title, Toast.LENGTH_LONG).show();
 
-                Item2 item = new Item2(title, "Life", author, code);
+                Item2 item = new Item2(title, "descriptionx", "creatorx", "viewsx", "ratingx", "codex");
                 itemList.add(item);
 
 
@@ -227,7 +231,7 @@ public class Home extends AppCompatActivity {
 
 //                Toast.makeText(getContext(), "title:"+title, Toast.LENGTH_LONG).show();
 
-                Item2 itemTrend = new Item2(title, "Life", author, code );
+                Item2 itemTrend = new Item2("titlex", "descriptionx", "creatorx", "viewsx", "ratingx", "codex");
                 itemListTrend.add(itemTrend);
 
 

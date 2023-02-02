@@ -2,7 +2,7 @@ package com.hizkeel.truthordare2;
 
 import static android.widget.Toast.LENGTH_SHORT;
 import static com.hizkeel.truthordare2.JsonQuestion.createJson;
-import static com.sttudiom.assessment.model.JsonQuestion.createJson;
+
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -22,7 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.sttudiom.assessment.view.TestDescription;
+
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,19 +37,22 @@ public class ItemAdapter2 extends RecyclerView.Adapter<ItemAdapter2.MyViewHolder
     ProgressDialog progressDialog;
     Context context;
 
-    public static String author, category, description, title, duration, noOfQuestion, language;
+    public static String  title,description, creator, views, rating, code;
 
     private List<Item2> itemList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView title, author, category, code;
+        public TextView title, description, creator, views, rating, code;
 
         public MyViewHolder(View view) {
             super(view);
-            title = (TextView) view.findViewById(R.id.item_title);
-            author = (TextView) view.findViewById(R.id.item_author);
-            category = (TextView) view.findViewById(R.id.item_category);
-            code = (TextView) view.findViewById(R.id.item_code);
+            title = (TextView) view.findViewById(R.id.game_title);
+            description = (TextView) view.findViewById(R.id.game_description);
+            creator = (TextView) view.findViewById(R.id.game_creator);
+            views = (TextView) view.findViewById(R.id.game_view);
+            rating = (TextView) view.findViewById(R.id.game_rating);
+            code = (TextView) view.findViewById(R.id.game_code);
+
         }
     }
 
@@ -61,7 +64,7 @@ public class ItemAdapter2 extends RecyclerView.Adapter<ItemAdapter2.MyViewHolder
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_ass2, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_ass23, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -70,9 +73,17 @@ public class ItemAdapter2 extends RecyclerView.Adapter<ItemAdapter2.MyViewHolder
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Item2 item = itemList.get(position);
         holder.title.setText(item.getTitle());
-        holder.category.setText(item.getCategory());
-        holder.author.setText(item.getAuthor());
+
+        holder.description.setText(item.getDescription());
+        holder.creator.setText(item.getCreator());
+        holder.views.setText(item.getViews());
+        holder.rating.setText(item.getRating());
         holder.code.setText(item.getCode());
+
+
+
+
+
         // implement setOnClickListener event on item view.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +92,7 @@ public class ItemAdapter2 extends RecyclerView.Adapter<ItemAdapter2.MyViewHolder
 //                Toast.makeText(context, item.toString(), Toast.LENGTH_SHORT).show();
 
 
-//                Toast.makeText(context, item.getCode().toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, item.getCode().toString(), Toast.LENGTH_LONG).show();
 
                 AssItemAdapter.PICKED_CODE = item.getCode().toString();
 

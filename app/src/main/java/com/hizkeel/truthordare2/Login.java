@@ -157,8 +157,9 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
     public void btnLogin2(View v){
 
-        Intent intent = new Intent(this, Home.class);
-        startActivity(intent);
+        loadAssessmentNew();
+
+
 
 
     }
@@ -565,9 +566,9 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
     public void loadAssessmentNew(){
 
+        progProc();
 
-
-        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
+        String URL = "http://api.question.hizkeel.com/v1/api.php";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST, URL,
                 new Response.Listener<String>() {
@@ -577,7 +578,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             if (jsonObject.getString("status").equals("true")) {
-//                                progressDialog.dismiss();
+                                progressDialog.dismiss();
 //                                Toast.makeText(getContext(), "successfullyyy"+response.toString(), LENGTH_SHORT).show();
 
 
@@ -586,9 +587,13 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
                                 String iop = readJson(getApplicationContext(), "new_list");
 
-//                                Toast.makeText(getApplicationContext(), "x"+ iop, Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "x"+ iop, Toast.LENGTH_LONG).show();
 
-                                loadAssessmentTrend();
+//                                loadAssessmentTrend();
+
+
+
+                                    go();
 
 //                                Toast.makeText(getContext(), "x:" + x, Toast.LENGTH_LONG).show();
 
@@ -608,7 +613,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         //what to do if it encounter error
-//                        progressDialog.dismiss();
+                        progressDialog.dismiss();
                         // loadTest();
                         Toast.makeText(getApplicationContext(), "Seems your network is bad. Kindly restart app if this persist"+error, LENGTH_SHORT).show();
                     }
