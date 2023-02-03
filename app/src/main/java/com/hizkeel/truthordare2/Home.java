@@ -193,12 +193,16 @@ public class Home extends AppCompatActivity {
             for(int i = 0;  i <  10; i++){
 
                 String title = m_jArry.getJSONObject(i).getString("title");
-                String author = m_jArry.getJSONObject(i).getString("author");
-                String code = m_jArry.getJSONObject(i).getString("testCode");
+                String description = m_jArry.getJSONObject(i).getString("description");
+                String creator = m_jArry.getJSONObject(i).getString("creator");
+                String code = m_jArry.getJSONObject(i).getString("code");
+                String review = m_jArry.getJSONObject(i).getString("views");
+                String rating = m_jArry.getJSONObject(i).getString("rating");
+
 
 //                Toast.makeText(getContext(), "title:"+title, Toast.LENGTH_LONG).show();
 
-                Item2 item = new Item2(title, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ever since the 1500s, when an unknown printer\n", "creatorx", "viewsx", "ratingx", "GH4598QW9X");
+                Item2 item = new Item2(title, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ever since the 1500s, when an unknown printer\n", "creatorx", "viewsx", "ratingx", code);
                 itemList.add(item);
 
 

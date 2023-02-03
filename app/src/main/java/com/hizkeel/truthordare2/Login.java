@@ -623,7 +623,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("command", "get_assessment_type");
+                params.put("command", "get_vibe_type");
                 params.put("type", "new");
 
 
