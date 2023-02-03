@@ -12,8 +12,11 @@
         <entry key="app/src/main/res/drawable/ass_list_bg.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/back_white.xml" value="0.371" />
         <entry key="app/src/main/res/drawable/button2.xml" value="0.371" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.353" />
         <entry key="app/src/main/res/drawable/ic_baseline_run_circle_24.xml" value="0.371" />
         <entry key="app/src/main/res/drawable/ic_nav.xml" value="0.2215" />
+        <entry key="app/src/main/res/drawable/ic_round_remove_red_eye_24.xml" value="0.353" />
+        <entry key="app/src/main/res/drawable/ic_round_star_outline_24.xml" value="0.353" />
         <entry key="app/src/main/res/drawable/person.xml" value="0.31" />
         <entry key="app/src/main/res/drawable/profile_head.xml" value="0.31" />
         <entry key="app/src/main/res/drawable/selector.xml" value="0.371" />
@@ -33,7 +36,7 @@
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/activity_vibe_info.xml" value="0.4519923283503605" />
         <entry key="app/src/main/res/layout/item_ass2.xml" value="0.26182432432432434" />
-        <entry key="app/src/main/res/layout/item_ass23.xml" value="0.26182432432432434" />
+        <entry key="app/src/main/res/layout/item_ass23.xml" value="0.23324003477354308" />
         <entry key="app/src/main/res/layout/item_ass_row.xml" value="0.26182432432432434" />
         <entry key="app/src/main/res/layout/progress_loading.xml" value="0.4036458333333333" />
         <entry key="app/src/main/res/menu/menu_navigation.xml" value="0.26182432432432434" />

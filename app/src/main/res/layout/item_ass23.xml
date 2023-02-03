@@ -28,20 +28,36 @@
             android:orientation="vertical"
             android:padding="20dp">
 
-            <TextView
-                android:id="@+id/game_code"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/quicksand_medium"
-                android:text="234q4hjkj43"
-                android:textColor="@color/well" />
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button1"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingTop="3dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:id="@+id/game_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:text="GH56G767F"
+                    android:textColor="@color/well"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/game_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/asul_bold"
+                android:fontFamily="casual"
                 android:text="Freaky Party "
                 android:textColor="@color/colorPrimary"
                 android:textSize="24sp"
@@ -79,9 +95,11 @@
                         android:id="@+id/game_creator"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
                         android:fontFamily="@font/quicksand_medium"
+                        android:gravity="center_vertical"
                         android:text="splashblack"
-                        android:textColor="@color/colorPrimaryLight"
+                        android:textColor="@color/rd"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -101,9 +119,11 @@
                         android:id="@+id/game_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
                         android:fontFamily="@font/quicksand_medium"
+                        android:gravity="center_vertical"
                         android:text="200"
-                        android:textColor="@color/colorPrimaryLight"
+                        android:textColor="@color/rd"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -123,9 +143,11 @@
                         android:id="@+id/game_rating"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
                         android:fontFamily="@font/quicksand_medium"
+                        android:gravity="center_vertical"
                         android:text="3.8"
-                        android:textColor="@color/colorPrimaryLight"
+                        android:textColor="@color/rd"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -143,7 +165,8 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:text="View Game"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="gone" />
 
         </LinearLayout>
 

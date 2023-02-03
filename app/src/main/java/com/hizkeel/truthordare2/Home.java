@@ -198,7 +198,7 @@ public class Home extends AppCompatActivity {
 
 //                Toast.makeText(getContext(), "title:"+title, Toast.LENGTH_LONG).show();
 
-                Item2 item = new Item2(title, "descriptionx", "creatorx", "viewsx", "ratingx", "codex");
+                Item2 item = new Item2(title, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ever since the 1500s, when an unknown printer\n", "creatorx", "viewsx", "ratingx", "GH4598QW9X");
                 itemList.add(item);
 
 

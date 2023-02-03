@@ -568,7 +568,7 @@ public class Login extends AppCompatActivity implements Validator.ValidationList
 
         progProc();
 
-        String URL = "http://api.question.hizkeel.com/v1/api.php";
+        String URL = "http://api.truthdare.hizkeel.com/v1/api.php";
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST, URL,
                 new Response.Listener<String>() {
